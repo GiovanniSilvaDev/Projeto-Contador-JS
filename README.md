@@ -1,0 +1,1 @@
+Olá, esse é meu primeiro projeto Javascript. Eu utilizei o DOM para poder manipular os elementos da janela e alterar seu comportamento. Espero que gostem!
