@@ -1,12 +1,19 @@
-var currentNumberWrapper = document.getElementById('currentNumber');
-var currentNumber = 0;
+var exibirNumeroAtual = document.getElementById('numeroAtual');
+var numeroAtual = 0;
 
-function increment(){
-    currentNumber = currentNumber + 1;
-    currentNumberWrapper.innerHTML = currentNumber;
+function incrementar(){
+    if(numeroAtual < 10){
+        numeroAtual = numeroAtual + 1;
+        exibirNumeroAtual.innerHTML = numeroAtual;
+    }else{
+        numeroAtual += 0;
+    }
 }
-
-function decrement(){
-    currentNumber = currentNumber - 1;
-    currentNumberWrapper.innerHTML = currentNumber;
+function decrementar(){
+    if(numeroAtual > 0){
+        numeroAtual = numeroAtual - 1;
+        exibirNumeroAtual.innerHTML = numeroAtual;
+    }else{
+        numeroAtual -= 0;
+    }
 }
